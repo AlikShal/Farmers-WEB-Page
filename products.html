@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Table</title>
+  <base href="./">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Product Listings</h1>
+    <p>Current catalog & bullish sales figures</p>
+  </header>
+
+  <nav class="topnav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="vendors.html">Vendors</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section class="card">
+      <h2 class="table-title">Products and Sales (Monthly snapshot)</h2>
+      <p>All currency in Kazakhstani tenge (₸). Figures are sample/bullish data for assignment demonstration.</p>
+
+      <table class="product-table" aria-describedby="product-desc">
+        <caption id="product-desc" style="caption-side:bottom;text-align:left;padding-top:8px;font-size:0.95rem">Table shows vendor, product, base price, stall, monthly orders and estimated monthly revenue.</caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Vendor</th>
+            <th rowspan="2">Product</th>
+            <th colspan="2">Listing</th>
+            <th colspan="2">Monthly (est.)</th>
+          </tr>
+          <tr>
+            <th>Price (₸)</th>
+            <th>Stall</th>
+            <th>Orders</th>
+            <th>Revenue (₸)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Green Valley Farm</td>
+            <td>Tomatoes (kg)</td>
+            <td>500</td>
+            <td>A1</td>
+            <td>4,200</td>
+            <td>2,100,000</td>
+          </tr>
+
+          <tr class="highlight-row">
+            <td>Hilltop Orchards</td>
+            <td>Apples (box)</td>
+            <td>700</td>
+            <td>A2</td>
+            <td>6,800</td>
+            <td>4,760,000</td>
+          </tr>
+
+          <tr>
+            <td>Sunny Bees</td>
+            <td>Pure Honey (500g)</td>
+            <td>1,200</td>
+            <td>B1</td>
+            <td>2,000</td>
+            <td>2,400,000</td>
+          </tr>
+
+          <tr>
+            <td>Nomad Dairy</td>
+            <td>Artisan Cheese (pack)</td>
+            <td>1,500</td>
+            <td>B2</td>
+            <td>1,350</td>
+            <td>2,025,000</td>
+          </tr>
+
+          <tr>
+            <td>Steppe Harvest</td>
+            <td>Potatoes (sack)</td>
+            <td>350</td>
+            <td>C1</td>
+            <td>3,900</td>
+            <td>1,365,000</td>
+          </tr>
+
+          <!-- bullish totals row using colspan -->
+          <tr>
+            <td colspan="4" style="text-align:right;font-weight:700">Monthly total (sample)</td>
+            <td style="font-weight:700">18,250</td>
+            <td style="font-weight:700">12,650,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" style="margin-top:12px">
+      <h3>Notes</h3>
+      <ul>
+        <li>The highlighted row (Hilltop Orchards) shows the highest monthly revenue in this sample.</li>
+        <li>Colspan / Rowspan used in headers and totals for table readability.</li>
+        <li>All numbers are example data for the assignment — use DBMS queries to populate real values in a real project.</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer class="footer">&copy; 2025 Farmers Market Managing System</footer>
+</body>
+</html>
+<!-- End of products.html -->

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Farmers Market — Home (Task 1)</title>
+  <base href="./">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Farmers Market Managing System</h1>
+    <p>Organize stalls, vendors, and customer feedback — local community first</p>
+  </header>
+
+  <nav class="topnav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About (Tribute)</a></li>
+      <li><a href="vendors.html">Vendors (Wireframe)</a></li>
+      <li><a href="products.html">Products (Table)</a></li>
+      <li><a href="feedback.html">Feedback (Form)</a></li>
+    </ul>
+  </nav>
+
+  <div class="index-wrapper clearfix">
+    <div class="index-header-box card">
+      <h2 style="margin-bottom:8px">Assignment 2 — Simple Layout (Task 1)</h2>
+      <p>This page demonstrates a two-column layout implemented with <code>&lt;div&gt;</code> elements and CSS floats (no Flexbox/Grid). Left: sidebar menu. Right: main content (aside).</p>
+    </div>
+
+    <!-- Sidebar must be floated left for the assignment -->
+    <div class="sidebar">
+      <h3>Sidebar menu</h3>
+      <ul>
+        <li>Dashboard overview</li>
+        <li>Manage stalls</li>
+        <li>Reports & sales</li>
+        <li><span class="badge">HOT</span> Weekend event</li>
+      </ul>
+      <div style="height:12px"></div>
+      <div class="card">
+        <strong>Quick stats</strong>
+        <p>Vendors: <strong>18</strong><br>Products: <strong>65</strong><br>Orders (24h): <strong>87</strong></p>
+      </div>
+    </div>
+
+    <!-- Main content is to the right (not using flex/grid) -->
+    <div class="main-aside">
+      <h3>Main content (Aside)</h3>
+      <p>This Farmers Market Managing System is a demonstration site for the assignment. Layout uses <strong>div</strong> elements and floats — the sidebar is floated left and this content sits to the right via margin-left.</p>
+
+      <section class="card">
+        <h4>Today's highlights</h4>
+        <ul>
+          <li>New: Hilltop Orchards apple sale — <strong>30% off</strong></li>
+          <li>Sunny Bees reported a record day: <strong>₸ 240,000</strong> in honey sales</li>
+          <li>Nomad Dairy launched two new cheeses</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h4>Assignment checklist</h4>
+        <ol>
+          <li>Header — done</li>
+          <li>Navbar with 4+ links — done</li>
+          <li>Sidebar (left) + Main (right) using floats — done</li>
+          <li>Footer — done</li>
+        </ol>
+      </section>
+    </div>
+
+    <div style="clear:both"></div>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 Farmers Market Managing System — Assignment 2
+  </footer>
+
+</body>
+</html>
+<!-- End of main.html -->
